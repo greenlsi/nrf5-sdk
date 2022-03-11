@@ -8,8 +8,19 @@ The prerequisites for using this SDK are:
 - The nrf command line tools to flash and debug (https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download)
 - The JLink debugger programs (https://www.segger.com/downloads/jlink)
 
+In Windows, make program is required. The alternatives to install them are:
+- Install a [Windows Subsystem for Linux (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/install-win10), so you can install Ubuntu LTS (20.04). Run Ubuntu and install programming tools, including make, inside with apt
+      <code>
+      > apt-get install build-essential
+      </code>
+
+- Install [chocolatey package manager](https://chocolatey.org/install), so yoy can install make:
+      <code>
+      > choco install make
+      </code>
+
 The file nrf.rc sets the enviromental variabled NRF_GCC and NRF_SDK with the path for this two. The variables are used by the vscode configuration files.
-In Mac and Linux based distros, source nrf.rc should be executed before starting VS Code from command line
+In Mac and Linux based distros, source nrf.rc should be executed before starting VS Code from command line. In Windows, the variables can be added to the User or System Environmental variables.
 
 We propose using Visual Studio Code for programming and debugging the nRF. The extensions required are:
 - C/C++ (by Microsoft)
