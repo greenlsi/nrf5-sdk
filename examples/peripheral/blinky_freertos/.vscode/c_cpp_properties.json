@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "nRF52840-DK",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:NRF_GCC}/arm-none-eabi/include",
+                "${env:NRF_SDK}/modules/**",
+                "${env:NRF_SDK}/components/**"
+            ],
+            "defines": [
+                "BOARD_PCA10056",
+                "CONFIG_GPIO_AS_PINRESET",
+                "FLOAT_ABI_HARD",
+                "FREERTOS",
+                "NRF52840_XXAA",
+                "__HEAP_SIZE=8192",
+                "__STACK_SIZE=8192"
+            ],
+            "compilerPath": "${env:NRF_GCC}/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}

@@ -56,7 +56,7 @@ PASS_LINKER_INPUT_VIA_FILE  ?= 1
 .PRECIOUS: %.d %.o
 
 MK := mkdir
-RM := rm -rf
+RM := $(if $(filter Windows%,$(OS)),rd /S /Q ,rm -rf)
 
 # echo suspend
 ifeq ($(VERBOSE),1)

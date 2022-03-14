@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nRF52840 Debug",
+            "cwd": "${workspaceFolder}/pca10056/s140/armgcc",
+            "executable": "${workspaceFolder}/pca10056/s140/armgcc/_build/nrf52840_xxaa.out",
+            "request": "launch",
+            "type": "cortex-debug",
+            "showDevDebugOutput": "none",
+            "servertype": "jlink",
+            "serverpath": "/usr/bin/JLinkGDBServer",
+            "device": "nRF52840_xxAA",
+            "armToolchainPath": "${env:NRF_GCC}/bin/",
+            "preLaunchTask": "build"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nRF52840 Debug",
+            "cwd": "${workspaceFolder}/pca10056/blank/armgcc",
+            "executable": "${workspaceFolder}/pca10056/blank/armgcc/_build/nrf52840_xxaa.out",
+            "request": "launch",
+            "type": "cortex-debug",
+            "showDevDebugOutput": "none",
+            "servertype": "jlink",
+            "windows": {
+                "serverpath": "C:/Program Files (x86)/SEGGER/JLink_V687b/JLinkGDBServerCL.exe",
+            },
+            "linux": {
+                "serverpath": "/usr/bin/JLinkGDBServer",
+            },
+            "osx": {
+                "serverpath": "/usr/local/bin/JLinkGDBServer",
+            }
+            "device": "nRF52840_xxAA",
+            "armToolchainPath": "${env:NRF_GCC}/bin/",
+            "preLaunchTask": "build"
+        }
+    ]
+}

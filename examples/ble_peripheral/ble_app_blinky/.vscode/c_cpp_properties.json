@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "nRF52840-DK",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:NRF_GCC}/arm-none-eabi/include",
+                "${env:NRF_SDK}/modules/**",
+                "${env:NRF_SDK}/components/**"
+            ],
+            "defines": [
+		"APP_TIMER_V2",
+		"APP_TIMER_V2_RTC1_ENABLED",
+                "BOARD_PCA10056",
+                "CONFIG_GPIO_AS_PINRESET",
+                "FLOAT_ABI_HARD",
+                "NRF52840_XXAA",
+		"NRF_SD_BLE_API_VERSION=7",
+		"SOFTDEVICE_PRESENT",
+                "__HEAP_SIZE=8192",
+                "__STACK_SIZE=8192"
+            ],
+            "compilerPath": "${env:NRF_GCC}/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
