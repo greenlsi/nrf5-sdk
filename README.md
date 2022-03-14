@@ -9,6 +9,7 @@ The prerequisites for using this SDK are:
 - The JLink debugger programs (https://www.segger.com/downloads/jlink)
 
 In Windows, make program is required. The alternatives to install them are:
+- Install the make program from [GNUWin32](http://gnuwin32.sourceforge.net/)
 - Install a [Windows Subsystem for Linux (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/install-win10), so you can install Ubuntu LTS (20.04). Run Ubuntu and install programming tools, including make, inside with apt
       <code>
       > apt-get install build-essential
